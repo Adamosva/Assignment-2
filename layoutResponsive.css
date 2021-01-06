@@ -1,0 +1,65 @@
+/*
+    Include padding and border in element's total width so not to confuse %'s
+*/
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+.header{
+    background-color: whitesmoke;
+    text-shadow: 2px 2ppx black;
+    text-align: center;
+    padding:15px;
+    font-size: 150%;
+}
+
+.leftcol{
+    background-color: brown;
+    float: left;
+    width: 25%;
+    padding: 20px;
+    border-style: groove;
+}
+
+.maincontent{    
+    background-color: powderblue;
+    width: 50%;
+    padding: 20px;
+    border-style: groove;
+    float: left;
+    transform: rotate(180deg);
+}
+
+.rightcol{
+    float: right;
+    background-color: blue;
+    width: 25%;
+    padding: 20px;
+    border-style: groove;
+}
+
+/* Clear floats after the columns */
+.maincontainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    background-color: grey;
+    text-align: right;
+    color: white;
+}
+
+.responsive {
+      width:50%;
+     
+}
+.dark-mode{
+    background-color: black;
+  color: red;
+
+}
